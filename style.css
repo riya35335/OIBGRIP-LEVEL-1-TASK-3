@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*m {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pattaya', sans-serif;
+}
+
+body {
+    background: rgb(29, 49, 46);
+}
+
+.container {
+    background: linear-gradient(90deg, #c7330f, #9a1071d3, #103984, #2f0c4f);
+    background-size: 500% 500%;
+    animation: gradient 4s ease infinite;
+    height: 45vh;
+    width: 390px;
+    padding: 70px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 55%;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 18px;
+    border: 44px double rgb(0, 0, 0);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 90% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    border: 4px double #ffffff;
+    color: white;
+    background-size: 500% 500%;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    padding: 0%;
+    border-radius: 3em 1em;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin: auto;
+    padding: 0%;
+}
+
+.input_box {
+    width: 51%;
+    margin-left: 95px;
+    margin-bottom: 42px;
+}
+
+label {
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 3px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+
+input:focus {
+    border: 2px dashed #d2d2d2;
+    background-color: #d2d2d2;
+}
